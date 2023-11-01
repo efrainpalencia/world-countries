@@ -1,20 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { CountryInfoComponent } from './country-info/country-info.component';
+import { WorldAPIService } from 'src/shared/world-api.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
-    CountryInfoComponent
+    CountryInfoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
