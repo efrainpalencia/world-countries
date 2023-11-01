@@ -2,13 +2,13 @@
   <div class="row">
     <div class="col">
       <div *ngIf="countries.length > 0"> <!-- Check if the countries array has data -->
-        <h2>{{ getCountryProperty('name') }}</h2> <!-- Display the selected country name -->
-        <ul>
-          <li><strong>Capital:</strong> {{ getCountryProperty('capitalCity') }}</li>
-          <li><strong>Region:</strong> {{ getCountryProperty('region.value') }}</li>
-          <li><strong>Income Level:</strong> {{ getCountryProperty('incomeLevel.value') }}</li>
-          <li><strong>Latitude:</strong> {{ getCountryProperty('latitude') }}</li>
-          <li><strong>Longitude:</strong> {{ getCountryProperty('longitude') }}</li>
+        <h2 class="text-bg-primary p-3 mx-auto p-2" style="width: 200px;">{{ getCountryProperty('name') }}</h2> <!-- Display the selected country name -->
+        <ul class="list-group" style="width: 200px">
+          <li class="list-group-item"><strong>Capital:</strong> {{ getCountryProperty('capitalCity') }}</li>
+          <li class="list-group-item"><strong>Region:</strong> {{ getCountryProperty('region.value') }}</li>
+          <li class="list-group-item"><strong>Income Level:</strong> {{ getCountryProperty('incomeLevel.value') }}</li>
+          <li class="list-group-item"><strong>Latitude:</strong> {{ getCountryProperty('latitude') }}</li>
+          <li class="list-group-item"><strong>Longitude:</strong> {{ getCountryProperty('longitude') }}</li>
         </ul>
       </div>
       <div *ngIf="countries.length === 0"> <!-- Handle case when countries array is empty -->
