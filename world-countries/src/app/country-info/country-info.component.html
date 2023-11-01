@@ -1,1 +1,19 @@
-<p>country-info works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div *ngIf="countries.length > 0"> <!-- Check if the countries array has data -->
+        <h2>{{ getCountryProperty('name') }}</h2> <!-- Display the selected country name -->
+        <ul>
+          <li><strong>Capital:</strong> {{ getCountryProperty('capitalCity') }}</li>
+          <li><strong>Region:</strong> {{ getCountryProperty('region.value') }}</li>
+          <li><strong>Income Level:</strong> {{ getCountryProperty('incomeLevel.value') }}</li>
+          <li><strong>Latitude:</strong> {{ getCountryProperty('latitude') }}</li>
+          <li><strong>Longitude:</strong> {{ getCountryProperty('longitude') }}</li>
+        </ul>
+      </div>
+      <div *ngIf="countries.length === 0"> <!-- Handle case when countries array is empty -->
+        <p>Country information not available.</p>
+      </div>
+    </div>
+  </div>
+</div>
