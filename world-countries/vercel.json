@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "dist/world-countries", 
+        "src": "/world-countries/angular.json", 
         "use": "@vercel/node"
       }
     ],
