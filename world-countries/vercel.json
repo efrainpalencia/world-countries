@@ -8,7 +8,7 @@
     ],
     "routes": [
       { "handle": "filesystem" },
-      { "src": "/(.*)", "dest": "/dist/<your-angular-app-folder>/$1" } 
+      { "src": "/(.*)", "dest": "/dist/world-countries" } 
     ]
   }
   
