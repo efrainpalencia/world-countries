@@ -10,7 +10,7 @@ export class WorldAPIService {
   constructor(private http: HttpClient) {}
 
   getAllCountries(): Observable<any[]> {
-    const baseUrl = 'http://api.worldbank.org/V2/country?format=json';
+    const baseUrl = '//api.worldbank.org/V2/country?format=json';
 
     console.log('Fetching data from the API...'); // Add this line
 
