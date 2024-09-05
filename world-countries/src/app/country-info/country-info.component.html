@@ -1,9 +1,8 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
+
+  
       <div *ngIf="countries.length > 0"> <!-- Check if the countries array has data -->
-        <h2 class="text-bg-primary p-3 mx-auto p-2" style="width: 200px;">{{ getCountryProperty('name') }}</h2> <!-- Display the selected country name -->
-        <ul class="list-group" style="width: 200px">
+        <ul class="list-group">
+          <li class="list-group-item bg-primary"><h2 class="text-canter text-light">{{ getCountryProperty('name') }}</h2></li>
           <li class="list-group-item"><strong>Capital:</strong> {{ getCountryProperty('capitalCity') }}</li>
           <li class="list-group-item"><strong>Region:</strong> {{ getCountryProperty('region.value') }}</li>
           <li class="list-group-item"><strong>Income Level:</strong> {{ getCountryProperty('incomeLevel.value') }}</li>
@@ -14,6 +13,3 @@
       <div *ngIf="countries.length === 0"> <!-- Handle case when countries array is empty -->
         <p>Country information not available.</p>
       </div>
-    </div>
-  </div>
-</div>
